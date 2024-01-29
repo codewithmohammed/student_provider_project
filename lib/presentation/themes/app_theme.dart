@@ -3,8 +3,14 @@ import 'package:flutter/material.dart';
 ThemeData lightMode = ThemeData(
   buttonTheme: const ButtonThemeData(buttonColor: Color(0x008bc34a)),
   //accent color for snack bar and all
+  appBarTheme: const AppBarTheme(
+    titleTextStyle: TextStyle(
+      color: Color.fromARGB(255, 66, 66, 66),
+    ),
+    backgroundColor: Color.fromARGB(255, 104, 58, 183),
+  ),
   snackBarTheme: const SnackBarThemeData(
-    backgroundColor: Color.fromARGB(255, 0, 171, 193),
+    backgroundColor: Color.fromARGB(255, 104, 58, 183),
   ),
   textTheme: const TextTheme(
     bodySmall: TextStyle(
@@ -34,8 +40,14 @@ ThemeData lightMode = ThemeData(
 );
 
 ThemeData darktheme = ThemeData(
-  buttonTheme:
-      const ButtonThemeData(buttonColor: Color.fromARGB(255, 139, 195, 74)),
+  appBarTheme: const AppBarTheme(
+      backgroundColor: Color.fromARGB(255, 13, 72, 161),
+      titleTextStyle: TextStyle(
+        color: Color.fromARGB(255, 189, 189, 189),
+      )),
+  buttonTheme: const ButtonThemeData(
+    buttonColor: Color.fromARGB(255, 13, 72, 161),
+  ),
   //accent color for snack bar and all
   snackBarTheme: const SnackBarThemeData(
       backgroundColor: Color.fromARGB(255, 0, 171, 193)),
