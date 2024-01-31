@@ -49,6 +49,7 @@ class ProfilePictureStack extends StatelessWidget {
               right: 0,
               bottom: 0,
               child: CircleAvatar(
+                backgroundColor: Colors.blueGrey,
                 child: IconButton(
                   onPressed: function,
                   icon: const Icon(Icons.edit),
