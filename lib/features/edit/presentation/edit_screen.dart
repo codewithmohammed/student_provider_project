@@ -14,6 +14,7 @@ class EditScreen extends StatelessWidget {
     final kwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
