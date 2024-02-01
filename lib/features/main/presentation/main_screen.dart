@@ -16,7 +16,9 @@ class _MainScreenState extends State<MainScreen> {
     PersistentTabController persistentTabController = PersistentTabController();
     return Scaffold(
         bottomNavigationBar: PersistentTabView(
+          
       context,
+      backgroundColor: const Color.fromARGB(255, 48, 62, 69),
       items: navBarItem,
       screens: screens,
       screenTransitionAnimation: const ScreenTransitionAnimation(
