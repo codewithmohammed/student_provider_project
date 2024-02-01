@@ -14,16 +14,18 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     PersistentTabController persistentTabController = PersistentTabController();
-    return SafeArea(
-      child: Scaffold(
-          bottomNavigationBar: PersistentTabView(
-            context,
-            items: navBarItem,
-            screens: screens,
-            controller: persistentTabController,
-            hideNavigationBarWhenKeyboardShows: true,
-            navBarStyle: NavBarStyle.style9,
-          )),
-    );
+    return Scaffold(
+        bottomNavigationBar: PersistentTabView(
+          
+      context,
+      backgroundColor: const Color.fromARGB(255, 48, 62, 69),
+      items: navBarItem,
+      screens: screens,
+      screenTransitionAnimation: const ScreenTransitionAnimation(
+          animateTabTransition: true, duration: Duration(milliseconds: 700)),
+      controller: persistentTabController,
+      hideNavigationBarWhenKeyboardShows: true,
+      navBarStyle: NavBarStyle.style9,
+    ));
   }
 }

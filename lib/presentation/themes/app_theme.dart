@@ -5,7 +5,7 @@ ThemeData lightMode = ThemeData(
   //accent color for snack bar and all
   appBarTheme: const AppBarTheme(
     titleTextStyle: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
     backgroundColor: Color.fromARGB(255, 104, 58, 183),
   ),
@@ -14,22 +14,22 @@ ThemeData lightMode = ThemeData(
   ),
   textTheme: const TextTheme(
     bodySmall: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
     bodyMedium: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
     bodyLarge: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
     titleLarge: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
     titleMedium: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
     titleSmall: TextStyle(
-      color: Color.fromARGB(255, 66, 66, 66),
+      color: Color.fromARGB(255, 24, 24, 24),
     ),
   ),
   brightness: Brightness.light,
@@ -43,7 +43,7 @@ ThemeData darktheme = ThemeData(
   appBarTheme: const AppBarTheme(
       backgroundColor: Color.fromARGB(255, 13, 72, 161),
       titleTextStyle: TextStyle(
-        color: Color.fromARGB(255, 189, 189, 189),
+        color: Color.fromARGB(255, 237, 237, 237),
       )),
   buttonTheme: const ButtonThemeData(
     buttonColor: Color.fromARGB(255, 13, 72, 161),
@@ -53,26 +53,28 @@ ThemeData darktheme = ThemeData(
       backgroundColor: Color.fromARGB(255, 0, 171, 193)),
   textTheme: const TextTheme(
     bodySmall: TextStyle(
-      color: Color.fromARGB(255, 189, 189, 189),
+      color: Color.fromARGB(255, 237, 237, 237),
     ),
     bodyMedium: TextStyle(
-      color: Color.fromARGB(255, 189, 189, 189),
+      color: Color.fromARGB(255, 237, 237, 237),
     ),
     bodyLarge: TextStyle(
-      color: Color.fromARGB(255, 189, 189, 189),
+      color: Color.fromARGB(255, 237, 237, 237),
     ),
     titleLarge: TextStyle(
-      color: Color.fromARGB(255, 189, 189, 189),
+      color: Color.fromARGB(255, 237, 237, 237),
     ),
     titleMedium: TextStyle(
-      color: Color.fromARGB(255, 189, 189, 189),
+      color: Color.fromARGB(255, 237, 237, 237),
     ),
     titleSmall: TextStyle(
-      color: Color.fromARGB(255, 189, 189, 189),
+      color: Color.fromARGB(255, 237, 237, 237),
     ),
   ),
-  brightness: Brightness.light,
-  colorScheme: const ColorScheme.light(
+  brightness: Brightness.dark,
+  colorScheme: const ColorScheme.dark(
+    secondaryContainer:Color.fromARGB(0, 0, 30, 112) ,
+    primaryContainer: Color.fromARGB(0, 0, 30, 112),
       primary: Color.fromARGB(255, 13, 72, 161),
       background: Color.fromARGB(255, 33, 33, 33)),
 );
